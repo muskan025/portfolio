@@ -1,0 +1,36 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    width:10rem;
+    height: 13rem;
+    position: absolute;
+  text-align: center;
+  background: rgba(255,255,255,0.26);
+    border:7px solid var(--prussianCard);
+    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    padding:0px 26px 2rem 26px;
+}
+
+ .card span:nth-of-type(2){
+    color: var(--gray);
+    font-size:16px;
+ }
+ .c-button{
+    background:  #FFFFFF;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290FD;
+ }
+
+ @media screen and (max-width:480px){
+   .card{
+      width:12.5rem;
+   }
+ }
