@@ -20,7 +20,7 @@ const Projects = () => {
          {/* slider */}
         <Swiper spaceBetween={30} slidesPerView={3} grabCursor={true} className='projects-slider'>
 <SwiperSlide>
-<a href="https://podcast-platform.netlify.app"><img src={podcast} alt="" /></a>
+<a href="https://podcast-app-beryl.vercel.app/"><img src={podcast} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
 <a href="https://socialmedia-reactapp.netlify.app"> <img src={socialMediaApp} alt="" /></a>
