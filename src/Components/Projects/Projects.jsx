@@ -3,7 +3,7 @@ import './Projects.css'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import Sidebar from '../../img/sidebar.png'
 import quotivation from '../../img/quotivation.png'
-import podcast from '../../img/podcast.png'
+import podcastapp from '../../img/podcastapp.png'
 import socialMediaApp from '../../img/social-media-app.png'
 import HOC from '../../img/hoc.png'
 import taskify from '../../img/taskify.png'
@@ -20,7 +20,7 @@ const Projects = () => {
          {/* slider */}
         <Swiper spaceBetween={30} slidesPerView={3} grabCursor={true} className='projects-slider'>
 <SwiperSlide>
-<a href="https://podcast-app-beryl.vercel.app/"><img src={podcast} alt="" /></a>
+<a href="https://podcast-app-beryl.vercel.app/"><img src={podcastapp} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
 <a href="https://socialmedia-reactapp.netlify.app"> <img src={socialMediaApp} alt="" /></a>
