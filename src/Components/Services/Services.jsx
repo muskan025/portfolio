@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import "./Services.css";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
-import Card from "../Card/Card";
+ import Glasses from "../../img/glasses.png";
+ import Card from "../Card/Card";
 import Resume from "./resume.pdf";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -32,15 +30,17 @@ const Services = () => {
       </div>
       {/* right side */}
       <div className="cards">
+       
         <motion.div
+         
           initial={{ left: "25rem" }}
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
-            heading="Design"
-            detail="Figma,Sketch,Photoshop"
+            emoji={Glasses}
+            heading="Developer"
+            detail="HTML,CSS,Javascript,Typescript,React"
           />
         </motion.div>
         <motion.div
@@ -48,22 +48,22 @@ const Services = () => {
           whileInView={{ left: "-4rem" }}
           transition={transition}
         >
-          <Card
-            emoji={Glasses}
-            heading="Developer"
-            detail="HTML,CSS,Javascript,React"
-          />
+          {/* <Card
+            emoji={HeartEmoji}
+            heading="Design"
+            detail="Figma,Sketch,Photoshop"
+          /> */}
         </motion.div>
         <motion.div
           initial={{ top: "19rem", left: "25rem" }}
           whileInView={{ left: "12rem" }}
           transition={transition}
         >
-          <Card
+          {/* <Card
             emoji={Humble}
             heading="UI/UX"
             detail="lorem ipsum text are usual"
-          />
+          /> */}
         </motion.div>
         <div
           className="blur s-blur2"

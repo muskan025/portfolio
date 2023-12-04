@@ -19,11 +19,11 @@ function Navbar() {
            
             <Link spy={true} to='services' activeClass="activeClass" smooth={true}><li>Services</li></Link>
             
-            <Link spy={true} to='experience' activeClass="activeClass" smooth={true}><li>Experience</li></Link>
+            {/* <Link spy={true} to='experience' activeClass="activeClass" smooth={true}><li>Experience</li></Link> */}
             
             <Link spy={true} to='projects' activeClass="activeClass" smooth={true}> <li>Projects</li></Link>
            
-            <Link spy={true} to='testimonial' activeClass="activeClass" smooth={true}><li>Testimonial</li></Link>
+            {/* <Link spy={true} to='testimonial' activeClass="activeClass" smooth={true}><li>Testimonial</li></Link> */}
             
           </ul>
         </div>

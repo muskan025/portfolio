@@ -2,9 +2,11 @@ import React ,{useContext}from 'react'
 import './Projects.css'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import Sidebar from '../../img/sidebar.png'
-import Ecommerce from '../../img/ecommerce.png'
+import quotivation from '../../img/quotivation.png'
+import podcast from '../../img/podcast.png'
+import socialMediaApp from '../../img/social-media-app.png'
 import HOC from '../../img/hoc.png'
-import MusicApp from '../../img/musicapp.png'
+import taskify from '../../img/taskify.png'
 import { themeContext } from "../../Context";
 import 'swiper/css'
 const Projects = () => {
@@ -18,16 +20,18 @@ const Projects = () => {
          {/* slider */}
         <Swiper spaceBetween={30} slidesPerView={3} grabCursor={true} className='projects-slider'>
 <SwiperSlide>
-    <img src={Sidebar} alt="" />
+<a href="https://podcast-platform.netlify.app"><img src={podcast} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
-    <img src={Ecommerce} alt="" />
+<a href="https://socialmedia-reactapp.netlify.app"> <img src={socialMediaApp} alt="" /></a>
+
 </SwiperSlide>
 <SwiperSlide>
-    <img src={MusicApp} alt="" />
+<a href="https://taskify-reactapp.netlify.app/"><img src={taskify} alt="" /></a>
+   
 </SwiperSlide>
 <SwiperSlide>
-    <img src={HOC} alt="" />
+<a href="ttps://quotivationapp.netlify.app"><img src={quotivation} alt="" /></a>
 </SwiperSlide>
         </Swiper>
     </div>

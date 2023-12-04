@@ -19,10 +19,10 @@ function App() {
     <Navbar/>
     <Intro/>
     <Services/>
-    <Experience/>
-    <Works/>
+    {/* <Experience/>
+    <Works/> */}
     <Projects/>
-    <Testimonials/>
+    {/* <Testimonials/> */}
     <Contact/>
     <Footer/>
     
