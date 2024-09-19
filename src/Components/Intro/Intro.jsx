@@ -21,7 +21,7 @@ export const Intro = () => {
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
           <span>Muskan Dodmani</span>
-          <span>
+          <span className="about">
           My aim is to contribute my technical skills to a dynamic team that values innovation and fosters a collaborative environment. I am excited about leveraging emerging technologies to create software solutions that not only meet but exceed user expectations.<br/><br/>
 
           Outside of tech, I find joy in composing poems and creating inspiring quotes.

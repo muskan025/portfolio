@@ -1,26 +1,37 @@
 
 import React, {useContext,useRef,useState} from 'react';
 import './Contact.css'
- import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
  import { themeContext } from "../../Context";
 const Contact = () => {
 
-  const form = useRef();
   const [done,setDone]=useState(false);
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(form)
 
-    emailjs.sendForm('service_vrsjjfl', 'template_fukemie', form.current, 'a5x7f7Ur717h3gT8L')
-      .then((result) => {
-          console.log(result.text);
-          setDone(true);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs
+      .sendForm('service_vrsjjfl', 'template_fukemie', form.current, {
+        publicKey: 'a5x7f7Ur717h3gT8L',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
+
+  function thanking(){
+    setDone(true)
+    setTimeout(()=>{ setDone(false)},3000)
+  }
 
   return (
     <div className='contact-form' id="contact"> 
@@ -40,8 +51,8 @@ const Contact = () => {
                 <input type="email" name="user_email" className="user" placeholder="Email" />
           
                 <textarea name="message" className="user" placeholder="Message" ></textarea>
-                <input type="submit" value="Send" className='button' />
-                {done && <span style={{ color: darkMode ? "white" : "" }}>Thanks for contacting me &#128516;</span>}
+                <input type="submit" value="Send" className='button' onClick={thanking}/>
+                {done && <span style={{ color: darkMode ? "" : "" }}>Thanks for contacting me &#128516;</span>}
              <div className="blur c-blur1" style={{background:"var(--purple)"}}></div>
         </form>
     </div>

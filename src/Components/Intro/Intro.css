@@ -92,6 +92,9 @@
     left: 56%;
     filter: blur(72px);
 }
+.about{
+    line-height: 1.3rem;
+}
 
 @media screen and (max-width:480px){
     .intro{
