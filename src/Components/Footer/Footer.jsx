@@ -16,9 +16,19 @@ const Footer = () => {
 <div className="f-content">
     <span>muskandodmani222@gmail.com</span>
     <div className="f-icons">
-        <Instagram  color='white' size='3rem'/>
-        <LinkedIn color='white' size='3rem'/>
+        <a href="https://github.com/muskan025" target="blank">
         <Github color='white' size='3rem'/>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muskan-dodmani/"
+            target="blank"
+            rel="noreferrer"
+          >
+            <LinkedIn color='white' size='3rem'/>
+          </a>
+          <a href="https://www.instagram.com/poetry_frames_786/" target="blank">
+          <Instagram  color='white' size='3rem'/>
+          </a>
     </div>
 </div>
     </div>

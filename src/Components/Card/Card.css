@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     gap:1rem;
-    width:auto;
+    width: auto;
+    max-width: 300px;
     height: 13rem;
     position: absolute;
   text-align: center;
@@ -12,7 +13,7 @@
     border:7px solid var(--prussianCard);
     border-radius: 20px;
     box-shadow: var(--boxShadow);
-    padding:0px 26px 2rem 26px;
+    padding:30px 20px 40px 20px;
 }
 
  .card span:nth-of-type(2){
@@ -28,7 +29,9 @@
     font-size: 16px;
     color: #5290FD;
  }
-
+.detail{
+   text-wrap: pretty;
+}
  @media screen and (max-width:480px){
    .card{
       width:12.5rem;

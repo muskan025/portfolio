@@ -9,6 +9,7 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import {motion} from 'framer-motion'
+import { Link } from "react-scroll";
 export const Intro = () => {
 
   const transition= {duration:2,type:'spring'}
@@ -21,11 +22,13 @@ export const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
           <span>Muskan Dodmani</span>
           <span>
-            Frontend Developer with high level of experience in web designing and
-            development, producing the quality work.
+          My aim is to contribute my technical skills to a dynamic team that values innovation and fosters a collaborative environment. I am excited about leveraging emerging technologies to create software solutions that not only meet but exceed user expectations.<br/><br/>
+
+          Outside of tech, I find joy in composing poems and creating inspiring quotes.
           </span>
         </div>
-        <button className="button i-button">Hire me</button>
+      
+        <Link spy={true} to='contact' activeClass="activeClass" smooth={true}>   <button className="button i-button">Hire me</button></Link>
         <div className="i-icons">
           <a href="https://github.com/muskan025" target="blank">
             <img src={Github} alt="" />
@@ -38,7 +41,6 @@ export const Intro = () => {
             <img src={LinkedIn} alt="" />
           </a>
           <a href="https://www.instagram.com/poetry_frames_786/" target="blank">
-            {" "}
             <img src={Instagram} alt="" />
           </a>
         </div>
@@ -50,7 +52,7 @@ export const Intro = () => {
           whileInView={{ left: "36%" }}
           transition={transition}
           className="floating-div">
-          <FloatingDiv image={Crown} txt1="Web" txt2="Developer" />
+          <FloatingDiv image={Crown} txt1="Frontend" txt2="Developer" />
         </motion.div>
         <motion.div  initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
