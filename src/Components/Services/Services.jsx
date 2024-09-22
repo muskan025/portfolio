@@ -27,7 +27,7 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <p>
-        Creating responsive, user-friendly websites with cutting-edge technologies like React.js, Node.js, and MongoDB. 
+        Creating responsive, user-friendly websites with cutting-edge technology like React.js,TypeScript
           <br />
           Ensuring your website runs at top speed, from code efficiency to load time reduction. I optimize websites for maximum performance and improve user satisfaction.
         </p>
@@ -47,7 +47,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"HTML, CSS, JavaScript, React.js, Node.js, Express.js,MongoDB"}
+            detail={"Figma"}
           />
         </motion.div>
         {/* second card */}
@@ -59,7 +59,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React.js, Node.js, Express.js,MongoDB"}
+            detail={"HTML, CSS, SCSS, JavaScript, TypeScript, Redux, RTK Query, React.js, Node.js, Express.js, MongoDB"}
           />
         </motion.div>
         {/* 3rd */}

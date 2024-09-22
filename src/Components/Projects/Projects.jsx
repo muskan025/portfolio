@@ -5,8 +5,8 @@ import Sidebar from '../../img/sidebar.png'
 import quotivation from '../../img/quotivation.png'
 import podcastapp from '../../img/podcastapp.png'
 import liveup from '../../img/liveup.png'
+import podcast from '../../img/podcast.png'
 import worldExplorer from '../../img/worldExplorer.png'
-import HOC from '../../img/hoc.png'
 import taskify from '../../img/taskify.png'
 import { themeContext } from "../../Context";
 import 'swiper/css'
@@ -21,16 +21,16 @@ const Projects = () => {
 <a href="" target='_blank'><img src={liveup} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
-<a href="https://podcast-app-beryl.vercel.app/" target='_blank'><img src={podcastapp} alt="" /></a>
+<a href="https://prodpulseplatform.netlify.app" target='_blank'><img src={podcast} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
-<a href="https://quotivate-app.vercel.app/" target='_blank'><img src={quotivation} alt="" /></a>
+<a href="https://quotivate-app.vercel.app" target='_blank'><img src={quotivation} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
-<a href="https://world-explorer-webapp.netlify.app/" target='_blank'><img src={worldExplorer} alt="" /></a>
+<a href="https://worldexplorerr.netlify.app" target='_blank'><img src={worldExplorer} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
-<a href="https://taskify-reactapp.netlify.app/" target='_blank'><img src={taskify} alt="" /></a>
+<a href="https://taskify-prodapp.netlify.app" target='_blank'><img src={taskify} alt="" /></a>
 </SwiperSlide>
         </Swiper>
     </div>

@@ -12,8 +12,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form)
-
+ 
     emailjs
       .sendForm('service_vrsjjfl', 'template_fukemie', form.current, {
         publicKey: 'a5x7f7Ur717h3gT8L',
@@ -52,7 +51,7 @@ const Contact = () => {
           
                 <textarea name="message" className="user" placeholder="Message" ></textarea>
                 <input type="submit" value="Send" className='button' onClick={thanking}/>
-                {done && <span style={{ color: darkMode ? "" : "" }}>Thanks for contacting me &#128516;</span>}
+                {done && <span style={{ color: darkMode ? "" : "" }}><h2>Thanks for contacting me &#128516;</h2></span>}
              <div className="blur c-blur1" style={{background:"var(--purple)"}}></div>
         </form>
     </div>

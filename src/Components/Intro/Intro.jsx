@@ -52,7 +52,7 @@ export const Intro = () => {
           whileInView={{ left: "36%" }}
           transition={transition}
           className="floating-div">
-          <FloatingDiv image={Crown} txt1="Frontend" txt2="Developer" />
+          <FloatingDiv image={Crown} txt1="React" txt2="Developer" />
         </motion.div>
         <motion.div  initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
