@@ -18,7 +18,7 @@ const Projects = () => {
         <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
         <Swiper spaceBetween={30} slidesPerView={3} grabCursor={true} className='projects-slider'>
 <SwiperSlide>
-<a href="" target='_blank'><img src={liveup} alt="" /></a>
+<a href="https://liveup.vercel.app" target='_blank'><img src={liveup} alt="" /></a>
 </SwiperSlide>
 <SwiperSlide>
 <a href="https://prodpulseplatform.netlify.app" target='_blank'><img src={podcast} alt="" /></a>
