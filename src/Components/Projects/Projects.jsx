@@ -29,9 +29,7 @@ const Projects = () => {
 <SwiperSlide>
 <a href="https://worldexplorerr.netlify.app" target='_blank'><img src={worldExplorer} alt="" /></a>
 </SwiperSlide>
-<SwiperSlide>
-<a href="https://taskify-prodapp.netlify.app" target='_blank'><img src={taskify} alt="" /></a>
-</SwiperSlide>
+ 
         </Swiper>
     </div>
   )
