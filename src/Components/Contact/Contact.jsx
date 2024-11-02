@@ -1,8 +1,10 @@
 
 import React, {useContext,useRef,useState} from 'react';
-import './Contact.css'
 import emailjs from '@emailjs/browser';
- import { themeContext } from "../../Context";
+import { themeContext } from "../../Context";
+import DotGrid from '../../img/dotgrid.png'
+import './Contact.css'
+
 const Contact = () => {
 
   const [done,setDone]=useState(false);
@@ -41,6 +43,8 @@ const Contact = () => {
         <div className="blur s-blur1" style={{background:"#ABF1FF94"}}>
         </div>
         </div>
+        <span className="dot"><img src={DotGrid} alt="" /></span>
+        
     </div>
     <div className="c-right">
         <form ref={form} onSubmit={sendEmail} >
@@ -53,6 +57,7 @@ const Contact = () => {
                 <input type="submit" value="Send" className='button' onClick={thanking}/>
                 {done && <span style={{ color: darkMode ? "" : "" }}><h2>Thanks for contacting me &#128516;</h2></span>}
              <div className="blur c-blur1" style={{background:"var(--purple)"}}></div>
+
         </form>
     </div>
     </div>

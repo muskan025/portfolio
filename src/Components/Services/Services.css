@@ -1,19 +1,15 @@
 .services {
-    padding: 0 3rem 0 3rem;
     display: flex;
+    gap:20rem;
     height: 30rem;
-    margin-bottom: 8rem;
     margin-top: 9rem;
-    margin-bottom: 13rem;
-    /* scroll view */
-    padding-top: 3rem;
   }
-  /* left side */
+ 
   .awesome {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* gap: 20px; */
+    gap:1rem;
   }
   
   .awesome > :nth-child(1) {
@@ -27,16 +23,29 @@
     font-weight: bold;
   }
   .awesome > :nth-child(3) {
-    color: var(--gray);
     font-size: 14px;
     margin-top: 1rem;
   }
-  .s-button {
-    margin-top: 1rem;
+
+  .awesome .heading{
+    display: flex;
+    align-items: center;
   }
-  /* right sided */
+  .awesome .dot{
+    transform: translateX(50px);
+  }
+  .awesome button {
+    font-size:medium;
+    padding: clamp(5px, 11px, 20px);
+  }
+
+  .s-button .icon{
+    vertical-align: bottom;
+  }
+ 
   .cards {
     position: relative;
+     
   }
   .cards > * {
     position: absolute;
@@ -47,7 +56,7 @@
     line-height: 1.5rem;
     max-width: 600px;
   }
-  /* blur */
+ 
   .s-blur2 {
     left: 14rem;
     top: 8rem;
@@ -58,21 +67,37 @@
     left: -18rem;
   }
   
-  @media screen and (max-width: 480px) {
+  .card-3{
+    margin-bottom: 8rem;
+  }
+  @media screen and (max-width: 425px) {
     .services {
-      margin-top: 0;
+      margin-top: 1rem;
       flex-direction: column;
       gap: 5rem;
-      height: 66rem;
-      padding: 0;
-    }
-  
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 17rem;
+      height: 70rem;
     }
     .cards > * {
       position: static;
     }
+   
   }
+ 
+  @media screen and (max-width: 1024px){
+    .services {
+      margin-top: 7rem;
+      flex-direction: column;
+      gap: 5rem;
+      height: 70rem;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20rem;
+    }
+    .cards > * {
+      width: 100%;
+    }
+  }
+

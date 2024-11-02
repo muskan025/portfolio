@@ -3,7 +3,6 @@
     align-items: center;
     margin: -0.5rem -3.5rem;
     position: relative;
-    margin-top: -8rem;
 }
 
 .f-content{
@@ -20,11 +19,15 @@ color:white;
 
 .f-icons{
 display: flex;
-gap:2rem;
+gap:3rem;
 }
 
+.f-icon{
+    fill:white;
+    font-size:50px;
+}
 @media screen and (max-width:480px){
     .f-content{
         transform: scale(.5);
-    }
+    } 
 }

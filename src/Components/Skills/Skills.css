@@ -1,0 +1,63 @@
+ 
+.skills-badgeContainer{
+    margin-top: 15rem;
+}
+.badge-container {
+    background: #1a202c;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .badge-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10rem;
+    text-align: center;
+  }
+  .badge {
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .badge:hover {
+    transform: translateY(-2px);
+  }
+  
+  
+  @media screen and (max-width: 786px) {
+    .skills-badgeContainer{
+      margin-top: 21rem;
+    }
+
+  }
+  @media screen and (max-width: 425px) {
+  .skills-badgeContainer{
+    margin-top: 33rem;
+  }
+ 
+}
+ 
+ 
+  .badge-html { background-color: #E34F26; }
+  .badge-css { background-color: #1572B6; }
+  .badge-scss { background-color: #CC6699; }
+  .badge-javascript { background-color: #F7DF1E; color: black; }
+  .badge-redux { background-color: #764ABC; }
+  .badge-rtk { background-color: #764ABC; }
+  .badge-react { background-color: #61DAFB; color: black; }
+  .badge-nodejs { background-color: #339933; }
+  .badge-express { background-color: #000000; }
+  .badge-mongodb { background-color: #47A248; }

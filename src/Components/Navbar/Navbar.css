@@ -3,8 +3,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-    top: 0;
-   
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(180deg, #ffffff00 6.01%, #00828F 92.61%);
+    color:white;
 }
 
 .n-left{
@@ -12,7 +16,8 @@
 display: flex;
  align-items: center;  
 gap:2rem;
-}
+margin-left: 1rem;
+ }
 .n-name{
     font-size: 1.3rem;
     font-weight: bold;
@@ -28,6 +33,7 @@ gap:2rem;
 }
 .n-list>ul{
    display: flex;
+   align-items: center;
    gap:2rem;
    margin-right: 4rem;
    cursor: pointer;
@@ -43,11 +49,60 @@ li:hover{
     flex:2;
 }
 
-@media screen and (max-width:480px){
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width:786px){
+
+    .n-wrapper{
+        height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    }
+
+    .n-right{
+    flex-direction: column;
+    border-radius: 10px;
+    height: 100vh;
+    }
+.n-right-open{
+    background: linear-gradient(180deg, #00828F 6.01%, rgb(255 255 255 / 0%) 92.61%);
+}
     .n-list{
         display: none;
+        visibility: hidden ;
+        transition: visibility 0.8s ease;
     }
-    .n-button{
-        display: none;
+    .n-list>ul{
+        flex-direction: column;
     }
+ 
+    .open{
+        display: block;
+        visibility: visible;
+    }
+
+    .hamburger, .close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 16px;
+        font-size: clamp(12px, 20px, 25px);
+        cursor: pointer;
+    }
+.hamburger{
+    display: block;
+    transition: all 0.4s ease;
+}
+.close{
+    display:block;
+    transition: all 0.4s ease;
+}
+   
+
 }
