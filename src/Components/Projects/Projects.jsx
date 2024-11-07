@@ -37,7 +37,7 @@ const Projects = () => {
       },
       {
         title: "Taskify - Task Management Mini Platform",
-        description: "A task management mini platform to plan and enhancing productivity by listing to-do items in one place and increasing the probability of completing the tasks.",
+        description: "A task management mini platform to plan and enhance productivity by listing to-do items in one place and increase the probability of completing the tasks.",
         tech: ["React", "TypeScript"],
         github: "https://github.com/muskan025/taskify",
         live: "https://taskify-prodapp.netlify.app/",
